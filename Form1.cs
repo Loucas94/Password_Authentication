@@ -52,5 +52,20 @@ namespace Password_Authentication
             
         }
     }
-    }
+
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            string username = textBox1.Text;
+            string password = textBox2.Text;
+
+            string result = auth.AuthenticateUser(username, password);
+            label2.Text = result;
+            
+                
+                 
+        }
+
+     
 }
+    }
+
